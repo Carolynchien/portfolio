@@ -1,0 +1,31 @@
+.about {
+  width: 74.5%;
+  height: 70vh;
+  border-top: 1px solid #61892f;
+  border-bottom: 1px solid #61892f;
+  background: #222629;
+  margin-left: 390px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about img {
+  width: 305px;
+  height: 305px;
+}
+
+.about h1 {
+  background-color: transparent;
+}
+
+.contentbox {
+  margin: 120px 100px;
+  width: 800px;
+  min-width: 600px;
+
+  height: 200px;
+}
+.contentbox p {
+  font-size: 20px;
+  color: #86c232;
+}

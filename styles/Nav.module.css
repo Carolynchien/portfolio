@@ -1,0 +1,46 @@
+.nav {
+  height: 70px;
+  width: 100vw;
+
+  position: fixed;
+  border-bottom: 2px solid #86c232;
+  max-width: 1620px;
+  z-index: 100;
+  background: #222629;
+  font-family: 'Aboreto';
+  margin-left: 0 auto;
+}
+.navSecondContainer {
+  width: 50%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.languageBtn {
+  margin-left: 40px;
+}
+.languageBtn button {
+  margin-right: 20px;
+  background: #222629;
+  font-family: 'Aboreto';
+  color: #86c232;
+  width: 50px;
+  border-radius: 10px;
+  border: 1px solid #86c232;
+  padding: 2px 5px;
+}
+
+.navLinkBtn a {
+  font-family: 'Aboreto';
+  text-decoration: none;
+  color: #86c232;
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+.navLinkBtn a:hover {
+  font-size: 22px;
+  color: rgba(134, 194, 50, 0.5);
+}

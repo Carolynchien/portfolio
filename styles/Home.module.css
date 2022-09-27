@@ -1,8 +1,9 @@
 .container {
   padding: 0 2rem;
+  background: #222629;
 }
 
-.main {
+/* .main {
   min-height: 100vh;
   padding: 4rem 0;
   flex: 1;
@@ -126,4 +127,109 @@
   .logo img {
     filter: invert(1);
   }
+} */
+
+.main {
+  position: fixed;
+  top: 10px;
+  font-size: 80px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: transparent;
+  align-items: center;
+  color: #86c232;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: 'Aboreto';
+  line-height: 2;
+}
+
+.main h2 {
+  color: #86c232;
+  position: fixed;
+  top: 50px;
+  margin-left: 50px;
+  /* background-color: transparent; */
+
+  /* padding: 0 20px;
+  margin: 0 100px; */
+}
+
+/* .main h2:nth-of-type(1) {
+  position: relative;
+
+  color: aqua;
+  border: 1px solid gray;
+  transform: (1);
+  z-index: 0;
+} */
+
+.main p {
+  position: relative;
+  z-index: 2;
+  margin-left: 50px;
+  color: #86c232;
+  text-align: center;
+}
+
+/* .main h2 {
+  position: relative;
+} */
+
+.second {
+  position: relative;
+  z-index: 20;
+}
+
+/* 
+.second h1 {
+  z-index: 0;
+  position: relative;
+  background-color: transparent;
+} */
+
+.introContainer {
+  height: 99vh;
+  width: 100vw;
+  z-index: 6;
+}
+
+.projectContainer {
+  height: 100vh;
+  position: sticky;
+  top: 69px;
+  z-index: 30;
+  width: 98.9%;
+  background: #222629;
+  border-top: 1px solid #86c232;
+  display: flex;
+  justify-content: center;
+}
+
+.projectContainer h1 {
+  line-height: 8;
+  color: #86c232;
+  font-size: 100px;
+  letter-spacing: 8px;
+  font-family: 'Aboreto';
+}
+
+.introContainertwo {
+  position: absolute;
+  z-index: 100;
+  height: 99vh;
+  width: 100vw;
+}
+
+.projectContainerthrid {
+  height: 2500px;
+}
+
+.third {
+  position: relative;
+  z-index: 20;
 }
