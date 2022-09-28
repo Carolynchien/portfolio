@@ -17,9 +17,6 @@ export default function CardSlider({ selectedProject }) {
 
   return (
     <div className={styles.mainSliderContainer}>
-      <div className={`${styles.leftBtn} ${styles.btn}`} onClick={slideLeft}>
-        <FontAwesomeIcon icon={faAnglesLeft} />
-      </div>
       <div className={`slider ${styles.slider}`}>
         {selectedProject &&
           selectedProject.imageCollection.map((img, index) => (
@@ -27,10 +24,15 @@ export default function CardSlider({ selectedProject }) {
               <img src={img.src} />
             </div>
           ))}
-      </div>
-
-      <div className={`${styles.rightBtn} ${styles.btn} `} onClick={slideRight}>
-        <FontAwesomeIcon icon={faAnglesRight} />
+        <div className={`${styles.leftBtn} ${styles.btn}`} onClick={slideLeft}>
+          <FontAwesomeIcon icon={faAnglesLeft} />
+        </div>
+        <div
+          className={`${styles.rightBtn} ${styles.btn} `}
+          onClick={slideRight}
+        >
+          <FontAwesomeIcon icon={faAnglesRight} />
+        </div>
       </div>
     </div>
   )

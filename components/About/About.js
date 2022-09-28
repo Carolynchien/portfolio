@@ -4,7 +4,10 @@ import profolio from '../../assets/profilePhoto.jpeg'
 export default function About() {
   return (
     <div className={styles.about}>
-      <img src={profolio.src}></img>
+      <div className={styles.imgContainer}>
+        <img src={profolio.src} />
+      </div>
+
       <div className={styles.contentbox}>
         <p>
           I am a frontend and backend developer who focuses on writing

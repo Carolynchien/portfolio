@@ -43,33 +43,32 @@ export default function Home() {
       <main>
         <header></header>
 
-        <div className={styles.scrollable}>
-          <div className={styles.introContainer}></div>
-          <h2 className={styles.main}>
-            <p>Hi! I&apos;m Carolyn</p> <p>A software Engineer </p>
-            <p>based in Atlanta</p>
-          </h2>
-          <div className={styles.second}>
-            <About></About>
-          </div>
-          <section className={styles.third}>
-            <Skills></Skills>
-          </section>
-          <div className={styles.projectContainerthrid}>
-            <div className={styles.projectContainer}>
-              <h1>PROJECTS</h1>
-              <ProjectDetail />
-            </div>
-
-            {!viewProjectDetail &&
-              projects.map((project, index) => (
-                <ProjectBox project={project} key={index} />
-              ))}
-          </div>
-
-          {/* <div className={styles.introContainertwo}>jdjdjddd</div>
-          <div className={styles.introContainer}>jddodo</div> */}
+        <div className={styles.introContainer}></div>
+        <div className={styles.main}>
+          <p>Hi! I&apos;m Carolyn</p> <p>A software Engineer </p>
+          <p>based in Atlanta</p>
         </div>
+        <div className={styles.second}>
+          <About />
+        </div>
+
+        <section className={styles.third}>
+          <Skills></Skills>
+        </section>
+        <div className={styles.projectContainerthrid}>
+          <div className={styles.projectContainer}>
+            <h1>PROJECTS</h1>
+            <ProjectDetail />
+          </div>
+
+          {!viewProjectDetail &&
+            projects.map((project, index) => (
+              <ProjectBox project={project} key={index} />
+            ))}
+        </div>
+
+        {/* <div className={styles.introContainertwo}>jdjdjddd</div>
+          <div className={styles.introContainer}>jddodo</div> */}
       </main>
 
       <footer className={styles.footer}></footer>

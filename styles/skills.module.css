@@ -1,12 +1,18 @@
 .skillmaincontainer {
-  width: 100%;
-  height: 100vh;
+  width: 82%;
+  height: 70vh;
+  border-top: 1px solid #61892f;
+  border-bottom: 1px solid #61892f;
+  background: #222629;
+  float: right;
+  padding: 2rem 10rem;
 }
 
 .image {
   z-index: 40;
   position: relative;
-  width: 160px;
+  max-width: 30%;
+  height: 16%;
   margin: 10px 10px;
   padding: 5px 5px;
   display: flex;
@@ -14,29 +20,15 @@
 }
 
 .image img {
-  width: 70%;
-}
-
-.skillSecondContainer {
-  position: absolute;
-  margin-top: 100px;
-  width: 74.5%;
-  height: 70vh;
-  border-top: 1px solid #86c232;
-  border-bottom: 1px solid#86c232;
-  background-color: #222629;
-  margin-left: 390px;
-  display: flex;
-  justify-content: space-between;
+  width: 100%;
 }
 
 .iconscontainer {
-  margin: 10px auto;
   display: flex;
   flex-wrap: wrap;
-  width: 800px;
-  height: 300px;
-  padding: 50px 30px;
+  width: 100%;
+  height: 100%;
+  padding: 10px 20px;
 }
 
 @keyframes marquee {
@@ -45,5 +37,40 @@
   }
   100% {
     transform: translateY(-100%);
+  }
+}
+
+@media (max-width: 390px) {
+  .skillmaincontainer {
+    min-width: 100%;
+    padding: 0;
+  }
+  .image {
+    max-height: 75px;
+  }
+  .imgContainer img {
+    min-width: 100%;
+  }
+  .contentbox {
+    min-width: 100%;
+  }
+  .contentbox p {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 1490px) {
+  .skillmaincontainer {
+    width: 90%;
+  }
+}
+
+@media (max-width: 793px) {
+  .skillmaincontainer {
+    width: 100%;
+    padding: 0;
+  }
+  .image {
+    max-width: 25%;
   }
 }

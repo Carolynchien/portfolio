@@ -1,6 +1,4 @@
 .projectBoxmainContainer {
-  min-width: 380px;
-
   width: 500px;
   height: 420px;
   border: 2px solid #86c232;
@@ -14,6 +12,7 @@
   transition: transform 0.7s ease-out;
   position: relative;
   z-index: 30;
+  text-align: center;
 }
 
 .projectBoxmainContainer.rotate {
@@ -32,9 +31,10 @@
 
 .imageBox {
   width: 85%;
-  margin-top: 10px;
+  margin-top: 0.5rem;
   border-radius: 5px;
 }
+
 .imageBox img {
   width: 100%;
   border-radius: 5px;
@@ -46,7 +46,6 @@
 }
 
 .nameBox {
-  margin-top: -30px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -56,7 +55,7 @@
 .nameBox h3 {
   color: #86c232;
   padding: 10px 10px;
-  font-size: 25px;
+  font-size: 1rem;
   font-family: 'Open Sans', sans-serif;
 }
 .nameBox h4 {
@@ -76,4 +75,21 @@
   color: #86c232;
   margin-bottom: 5px;
   font-family: 'Open Sans', sans-serif;
+}
+
+@media (max-width: 390px) {
+  .projectBoxmainContainer {
+    min-width: 335px;
+    max-height: 360px;
+  }
+  .imageBox {
+    margin-bottom: -30px;
+  }
+}
+
+@media (max-width: 1490px) {
+  .projectBoxmainContainer {
+    min-width: 400x;
+    max-height: 380px;
+  }
 }
