@@ -17,7 +17,7 @@ import { ProjectContext } from '../context/projectContext'
 import ProjectBox from '../components/Projecctbox/ProjectBox'
 export default function Home() {
   useEffect(() => {
-    Aos.init({ duration: 2200 })
+    Aos.init({ duration: 1100 })
   }, [])
   const {
     selectedProject,
@@ -44,10 +44,10 @@ export default function Home() {
 
         <div className={styles.scrollable}>
           <div className={styles.introContainer}></div>
-          <div className={styles.main}>
+          <h2 className={styles.main}>
             <p>Hi! I&apos;m Carolyn</p> <p>A software Engineer </p>
             <p>based in Atlanta</p>
-          </div>
+          </h2>
           <div className={styles.second}>
             <About></About>
           </div>
@@ -61,16 +61,12 @@ export default function Home() {
             </div>
 
             {/* {!viewProjectDetail ? <Projects /> : ''} */}
-
-            <div className={styles.projectSContainer}>
-              {projects.map((project, index) => (
-                <ProjectBox
-                  project={project}
-                  key={index}
-                  data-aos="fade-right"
-                />
-              ))}
+            <div className={styles.test} data-aos="fade-up-right">
+              hello
             </div>
+            {projects.map((project, index) => (
+              <ProjectBox project={project} key={index} />
+            ))}
           </div>
 
           {/* <div className={styles.introContainertwo}>jdjdjddd</div>
