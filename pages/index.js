@@ -61,19 +61,16 @@ export default function Home() {
             </div>
 
             {/* {!viewProjectDetail ? <Projects /> : ''} */}
-            {!viewProjectDetail ? (
-              <div className={styles.projectSContainer}>
-                {projects.map((project, index) => (
-                  <ProjectBox
-                    project={project}
-                    key={index}
-                    data-aos="fade-right"
-                  />
-                ))}
-              </div>
-            ) : (
-              ''
-            )}
+
+            <div className={styles.projectSContainer}>
+              {projects.map((project, index) => (
+                <ProjectBox
+                  project={project}
+                  key={index}
+                  data-aos="fade-right"
+                />
+              ))}
+            </div>
           </div>
 
           {/* <div className={styles.introContainertwo}>jdjdjddd</div>
