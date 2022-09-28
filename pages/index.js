@@ -67,7 +67,7 @@ export default function Home() {
                   <ProjectBox
                     project={project}
                     key={index}
-                    data-aos="flip-up"
+                    data-aos="fade-right"
                   />
                 ))}
               </div>
