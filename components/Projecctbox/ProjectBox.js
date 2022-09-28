@@ -22,7 +22,7 @@ export default function ProjectBox({ project }) {
   console.log(viewProjectDetail)
 
   return (
-    <div className={styles.projectBoxmainContainer} data-aos="flip-up">
+    <div className={styles.projectBoxmainContainer} data-aos="fade-left">
       <div className={styles.imageBox}>
         {image === '' ? (
           <video
