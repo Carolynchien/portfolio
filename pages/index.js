@@ -10,12 +10,15 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 // Prevent fontawesome from adding its CSS since we did it manually above:
 import { config } from '@fortawesome/fontawesome-svg-core'
 config.autoAddCss = false /* eslint-disable import/first */
-
+import Aos from 'aos'
 import { useEffect, useContext } from 'react'
 
 import { ProjectContext } from '../context/projectContext'
 
 export default function Home() {
+  useEffect(() => {
+    Aos.init({ duration: 1100 })
+  }, [])
   const {
     selectedProject,
     setSelectedProject,
@@ -58,6 +61,9 @@ export default function Home() {
             </div>
 
             {!viewProjectDetail ? <Projects /> : ''}
+            <div className={styles.test} data-aos="fade-up-right">
+              hello
+            </div>
           </div>
 
           {/* <div className={styles.introContainertwo}>jdjdjddd</div>

@@ -12,7 +12,7 @@ export default function ProjectBox({ project }) {
   const { image, name, description, video } = project
 
   useEffect(() => {
-    Aos.init({ duration: 2500 })
+    Aos.init({ duration: 1100 })
   }, [])
 
   const getDetails = (project) => {
@@ -22,7 +22,7 @@ export default function ProjectBox({ project }) {
   console.log(viewProjectDetail)
 
   return (
-    <div className={styles.projectBoxmainContainer} data-aos="flip-up">
+    <div className={styles.projectBoxmainContainer} data-aos="fade-up-right">
       <div className={styles.imageBox}>
         {image === '' ? (
           <video
