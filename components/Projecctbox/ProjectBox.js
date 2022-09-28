@@ -12,7 +12,7 @@ export default function ProjectBox({ project }) {
   const { image, name, description, video } = project
 
   useEffect(() => {
-    Aos.init({ duration: 1100 })
+    Aos.init({ duration: 2500 })
   }, [])
 
   const getDetails = (project) => {

@@ -15,6 +15,7 @@ import { useEffect, useContext } from 'react'
 import projects from '../assets/projects'
 import { ProjectContext } from '../context/projectContext'
 import ProjectBox from '../components/Projecctbox/ProjectBox'
+import 'aos/dist/aos.css'
 export default function Home() {
   useEffect(() => {
     Aos.init({ duration: 1100 })
@@ -60,13 +61,10 @@ export default function Home() {
               <ProjectDetail />
             </div>
 
-            {/* {!viewProjectDetail ? <Projects /> : ''} */}
-            <div className={styles.test} data-aos="fade-up-right">
-              hello
-            </div>
-            {projects.map((project, index) => (
-              <ProjectBox project={project} key={index} />
-            ))}
+            {!viewProjectDetail &&
+              projects.map((project, index) => (
+                <ProjectBox project={project} key={index} />
+              ))}
           </div>
 
           {/* <div className={styles.introContainertwo}>jdjdjddd</div>

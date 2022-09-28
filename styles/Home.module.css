@@ -242,6 +242,9 @@
 
 .projectContainerthrid {
   min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 300px;
 }
 
 .third {
@@ -262,5 +265,8 @@
   }
   .main {
     padding: 10px auto;
+  }
+  .projectContainerthrid {
+    padding-left: 0;
   }
 }
