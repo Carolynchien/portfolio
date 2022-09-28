@@ -7,11 +7,10 @@ export default function About() {
       <img src={profolio.src}></img>
       <div className={styles.contentbox}>
         <p>
-          I am a frontend and backend developer who focus on writing optimized,
-          efficient code.<br></br>I love building,structing dynamic projects,
-          and enjoying translating theoretical knowledge into actual code. I
-          always say there are so much more about coding that I dont know, but
-          that means there are so much more that I can learn.
+          I am a frontend and backend developer who focuses on writing
+          optimized, efficient code.<br></br>I love building,structing dynamic
+          projects, and enjoying translating theoretical knowledge into actual
+          code.
         </p>
       </div>
     </div>

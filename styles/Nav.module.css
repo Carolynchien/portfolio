@@ -1,17 +1,15 @@
 .nav {
   height: 70px;
   width: 100vw;
-
   position: fixed;
   border-bottom: 2px solid #86c232;
-  max-width: 1620px;
   z-index: 100;
   background: #222629;
   font-family: 'Aboreto';
   margin-left: 0 auto;
 }
 .navSecondContainer {
-  width: 50%;
+  width: 40%;
   height: 100%;
 
   display: flex;
@@ -42,5 +40,5 @@
 
 .navLinkBtn a:hover {
   font-size: 22px;
-  color: rgba(134, 194, 50, 0.5);
+  color: rgb(231, 41, 161);
 }

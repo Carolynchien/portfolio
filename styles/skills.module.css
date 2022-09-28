@@ -17,38 +17,6 @@
   width: 70%;
 }
 
-/* .image:nth-child(even) {
-  z-index: 0;
-  position: relative;
-  width: 150px;
-  margin-top: 10px;
-}
-.image:nth-child(4) {
-  z-index: 40;
-  position: relative;
-  width: 150px;
-  margin-top: 10px;
-}
-.image:nth-child(7) {
-  z-index: 0;
-  position: relative;
-  width: 150px;
-  margin-top: 10px;
-}
-.image:nth-child(9) {
-  z-index: 0;
-  position: relative;
-  width: 150px;
-  margin-top: 10px;
-} */
-
-.test {
-  z-index: 40;
-  position: relative;
-  background-color: aqua;
-  color: bisque;
-}
-
 .skillSecondContainer {
   position: absolute;
   margin-top: 100px;
@@ -69,35 +37,6 @@
   width: 800px;
   height: 300px;
   padding: 50px 30px;
-}
-
-.animationcontainer {
-  width: 300px;
-  height: 80%;
-  background-color: rgba(107, 97, 112, 0.4);
-  z-index: 40;
-  position: relative;
-  overflow: hidden;
-}
-
-.pContainer {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-}
-
-.pContainer p {
-  writing-mode: vertical-lr;
-  font-size: 30px;
-  margin: 10px;
-  display: inline-block;
-  margin-bottom: 100%;
-  white-space: nowrap;
-  line-height: 40px;
-  animation: marquee 5s linear infinite;
-  color: #86c232;
 }
 
 @keyframes marquee {

@@ -7,14 +7,8 @@ export default function Projects() {
   return (
     <div className={styles.mainContainer}>
       <div className={styles.projectscontainer}>
-        {projects.map((icon, index) => (
-          <ProjectBox
-            key={index}
-            image={icon.image}
-            description={icon.description}
-            name={icon.name}
-            video={icon.video}
-          />
+        {projects.map((project, index) => (
+          <ProjectBox project={project} />
         ))}
       </div>
     </div>

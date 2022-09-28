@@ -4,7 +4,7 @@
   border-top: 1px solid #61892f;
   border-bottom: 1px solid #61892f;
   background: #222629;
-  margin-left: 390px;
+  margin-left: 400px;
   display: flex;
   justify-content: space-between;
 }
@@ -21,11 +21,31 @@
 .contentbox {
   margin: 120px 100px;
   width: 800px;
-  min-width: 600px;
 
   height: 200px;
 }
+
 .contentbox p {
   font-size: 20px;
   color: #86c232;
+}
+
+@media only screen and (max-width: 390px) {
+  .about {
+    margin-left: 0px;
+    width: 100%;
+  }
+  .about img {
+    width: 160px;
+    height: 160px;
+  }
+  .contentbox {
+    margin: 10px 8px;
+    width: 200px;
+    height: 100px;
+  }
+  .contentbox p {
+    font-size: 24px;
+    color: #86c232;
+  }
 }

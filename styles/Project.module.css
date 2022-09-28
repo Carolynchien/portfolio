@@ -1,7 +1,7 @@
 .mainContainer {
   width: 100vw;
   position: absolute;
-  z-index: 50;
+  z-index: 30;
 }
 
 .projectscontainer {

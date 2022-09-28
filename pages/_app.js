@@ -1,11 +1,14 @@
 import '../styles/globals.css'
 import Nav from '../components/Nav/Nav'
+import { ProjectProvider } from '../context/projectContext'
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Nav />
-      <Component {...pageProps} />
+      <ProjectProvider>
+        <Nav />
+        <Component {...pageProps} />
+      </ProjectProvider>
     </>
   )
 }

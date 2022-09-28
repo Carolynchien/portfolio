@@ -46,24 +46,30 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .nameBox h3 {
   color: #86c232;
   padding: 10px 10px;
   font-size: 25px;
+  font-family: 'Open Sans', sans-serif;
 }
 .nameBox h4 {
   color: #86c232;
+  margin-right: 10px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .nameBox a {
   color: #86c232;
   margin-right: 10px;
   font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.descriptionBox {
+.descriptionBox h4 {
   color: #86c232;
   margin-bottom: 5px;
+  font-family: 'Open Sans', sans-serif;
 }
