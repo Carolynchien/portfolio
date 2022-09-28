@@ -21,13 +21,13 @@
 .contentbox {
   margin: 120px 100px;
   width: 800px;
-
   height: 200px;
 }
 
 .contentbox p {
   font-size: 20px;
   color: #86c232;
+  font-family: 'Open Sans', sans-serif;
 }
 
 @media only screen and (max-width: 390px) {
