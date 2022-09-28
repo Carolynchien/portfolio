@@ -1,4 +1,6 @@
 .projectBoxmainContainer {
+  min-width: 380px;
+
   width: 500px;
   height: 420px;
   border: 2px solid #86c232;
@@ -10,6 +12,8 @@
   background: #222629;
   transform: rotateX(0deg);
   transition: transform 0.7s ease-out;
+  position: relative;
+  z-index: 30;
 }
 
 .projectBoxmainContainer.rotate {

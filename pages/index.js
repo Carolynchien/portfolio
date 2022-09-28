@@ -12,12 +12,12 @@ import { config } from '@fortawesome/fontawesome-svg-core'
 config.autoAddCss = false /* eslint-disable import/first */
 import Aos from 'aos'
 import { useEffect, useContext } from 'react'
-
+import projects from '../assets/projects'
 import { ProjectContext } from '../context/projectContext'
-
+import ProjectBox from '../components/Projecctbox/ProjectBox'
 export default function Home() {
   useEffect(() => {
-    Aos.init({ duration: 1100 })
+    Aos.init({ duration: 2200 })
   }, [])
   const {
     selectedProject,
@@ -44,10 +44,10 @@ export default function Home() {
 
         <div className={styles.scrollable}>
           <div className={styles.introContainer}></div>
-          <h2 className={styles.main}>
-            Hi! I&apos;m Carolyn <p>A software Engineer </p>
+          <div className={styles.main}>
+            <p>Hi! I&apos;m Carolyn</p> <p>A software Engineer </p>
             <p>based in Atlanta</p>
-          </h2>
+          </div>
           <div className={styles.second}>
             <About></About>
           </div>
@@ -60,10 +60,16 @@ export default function Home() {
               <ProjectDetail />
             </div>
 
-            {!viewProjectDetail ? <Projects /> : ''}
-            <div className={styles.test} data-aos="fade-up-right">
-              hello
-            </div>
+            {/* {!viewProjectDetail ? <Projects /> : ''} */}
+            {!viewProjectDetail ? (
+              <div className={styles.projectSContainer}>
+                {projects.map((project, index) => (
+                  <ProjectBox project={project} key={index} />
+                ))}
+              </div>
+            ) : (
+              ''
+            )}
           </div>
 
           {/* <div className={styles.introContainertwo}>jdjdjddd</div>

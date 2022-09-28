@@ -6,7 +6,8 @@
   background-color: #222629;
   border: 1px solid #86c232;
   display: flex;
-  top: -10px;
+  top: 100px;
+
   flex-direction: column;
   background-color: rgb(255, 255, 255);
 }
