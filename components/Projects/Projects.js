@@ -8,7 +8,7 @@ export default function Projects() {
     <div className={styles.mainContainer}>
       <div className={styles.projectscontainer}>
         {projects.map((project, index) => (
-          <ProjectBox project={project} />
+          <ProjectBox project={project} key={index} />
         ))}
       </div>
     </div>

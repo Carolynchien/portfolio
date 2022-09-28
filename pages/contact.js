@@ -121,7 +121,7 @@ export default function Contact() {
               <p>Send me a message through Linkedin</p>
               <Link href="https://www.linkedin.com/in/yin-ting-chien/">
                 <a target="_blank" className="nav-link">
-                  Carolyn's Linkedin
+                  Carolyn&apos;s Linkedin
                 </a>
               </Link>
             </div>

@@ -22,8 +22,8 @@ export default function CardSlider({ selectedProject }) {
       </div>
       <div className={`slider ${styles.slider}`}>
         {selectedProject &&
-          selectedProject.imageCollection.map((img) => (
-            <div className={styles.imageContainer}>
+          selectedProject.imageCollection.map((img, index) => (
+            <div className={styles.imageContainer} key={index}>
               <img src={img.src} />
             </div>
           ))}
