@@ -64,7 +64,11 @@ export default function Home() {
             {!viewProjectDetail ? (
               <div className={styles.projectSContainer}>
                 {projects.map((project, index) => (
-                  <ProjectBox project={project} key={index} />
+                  <ProjectBox
+                    project={project}
+                    key={index}
+                    data-aos="flip-up"
+                  />
                 ))}
               </div>
             ) : (
