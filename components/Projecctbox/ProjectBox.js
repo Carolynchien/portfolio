@@ -2,6 +2,7 @@ import styles from '../../styles/ProjectBox.module.css'
 import Link from 'next/link'
 import { useEffect, useContext } from 'react'
 import Aos from 'aos'
+
 import { ProjectContext } from '../../context/projectContext'
 import 'aos/dist/aos.css'
 
@@ -11,7 +12,7 @@ export default function ProjectBox({ project }) {
   const { image, name, description, video } = project
 
   useEffect(() => {
-    Aos.init({ duration: 3000 })
+    Aos.init({ duration: 2500 })
   }, [])
 
   const getDetails = (project) => {
