@@ -12,8 +12,8 @@
   z-index: 40;
   position: relative;
 
-  max-width: 35%;
-  height: 18%;
+  max-width: 18%;
+  max-height: 17%;
   margin: 20px 20px;
   padding: 5px 5px;
   display: flex;
@@ -43,11 +43,11 @@
 
 @media (max-width: 575px) {
   .skillmaincontainer {
-    min-width: 100%;
+    min-width: 90%;
     padding: 0;
   }
   .image {
-    max-width: 20%;
+    min-width: 50px;
   }
   .imgContainer img {
     min-width: 100%;
@@ -60,18 +60,24 @@
   }
 }
 
+@media (max-width: 1160px) {
+  .skillmaincontainer {
+    width: 100%;
+    padding: 0;
+  }
+  .image {
+    max-width: 15%;
+  }
+}
+
 @media (max-width: 1490px) {
   .skillmaincontainer {
     max-width: 90%;
   }
 }
 
-@media (max-width: 1020px) {
-  .skillmaincontainer {
-    width: 100%;
-    padding: 0;
+@media (min-width: 1020px) {
+  .image {
+    max-width: 120px;
   }
-  /* .image {
-    max-width: 25%;
-  } */
 }
