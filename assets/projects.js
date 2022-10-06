@@ -40,7 +40,7 @@ const projects = [
     name: 'ThisSite ',
     description: 'A full-stack short-term vacation booking website',
     fullDescription:
-      'A cozy rentals website for vacation statys, where travelers can rent their properties out and book properties listed from locals',
+      'A rentals website for vacation statys, where travelers can rent their properties out and book properties listed from locals',
     image: ThisSite,
 
     skills: ['Javascript', 'ReactJs', 'CSS', 'PostgreSQL'],

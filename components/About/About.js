@@ -11,7 +11,7 @@ export default function About() {
       <div className={styles.contentbox}>
         <p>
           I am a frontend and backend developer who focuses on writing
-          optimized, efficient code.<br></br>I love building,structing dynamic
+          optimized, efficient code.<br></br>I love building, structing dynamic
           projects, and enjoying translating theoretical knowledge into actual
           code.
         </p>
