@@ -72,6 +72,11 @@
 @media (max-width: 680px) {
   .about {
     margin-left: 0px;
+    min-width: 100%;
+  }
+  .contentbox {
+    max-width: 300px;
+    padding: 25px 30px;
   }
 }
 

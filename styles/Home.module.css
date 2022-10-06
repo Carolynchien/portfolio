@@ -81,6 +81,7 @@
   letter-spacing: 8px;
   font-family: 'Aboreto';
   min-height: 100vh;
+  background: #222629;
 }
 
 .introContainertwo {
@@ -95,31 +96,14 @@
   display: flex;
   flex-wrap: wrap;
   padding-left: 200px;
+  width: 100%;
+
+  background: #222629;
 }
 
 @media (max-width: 980px) {
   .main p {
     font-size: 3.3rem;
-  }
-}
-
-@media (max-width: 680px) {
-  .projectSContainer {
-    margin: 0 auto;
-  }
-  .projectContainer h1 {
-    font-size: 4rem;
-    line-height: 10;
-  }
-  .main p {
-    font-size: 2.5rem;
-  }
-  .main {
-    padding: 10px auto;
-  }
-  .projectContainerthrid {
-    padding-left: 0;
-    width: 100%;
   }
 }
 
@@ -140,5 +124,29 @@
 @media (max-width: 1490px) {
   .projectContainerthrid {
     padding-left: 50px;
+  }
+}
+
+@media (max-width: 1190px) {
+  .projectContainerthrid {
+    justify-content: center;
+  }
+}
+@media (max-width: 680px) {
+  .projectSContainer {
+    margin: 0 auto;
+  }
+  .projectContainer h1 {
+    font-size: 4rem;
+    line-height: 10;
+  }
+  .main p {
+    font-size: 2.5rem;
+  }
+  .main {
+    padding: 10px auto;
+  }
+  .projectContainerthrid {
+    padding-left: -10px;
   }
 }

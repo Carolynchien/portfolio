@@ -77,6 +77,18 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+@media (max-width: 1490px) {
+  .projectBoxmainContainer {
+    min-width: 400x;
+    max-height: 380px;
+  }
+}
+@media (max-width: 1390px) {
+  .projectBoxmainContainer {
+    width: 450px;
+    height: 370px;
+  }
+}
 @media (max-width: 390px) {
   .projectBoxmainContainer {
     min-width: 335px;
@@ -84,12 +96,5 @@
   }
   .imageBox {
     margin-bottom: -30px;
-  }
-}
-
-@media (max-width: 1490px) {
-  .projectBoxmainContainer {
-    min-width: 400x;
-    max-height: 380px;
   }
 }
