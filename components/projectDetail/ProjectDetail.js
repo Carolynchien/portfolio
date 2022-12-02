@@ -35,9 +35,9 @@ export default function ProjectDetail() {
             {selectedProject &&
               selectedProject.skills.map((skill, index) =>
                 index === selectedProject.skills.length - 1 ? (
-                  <span>{`${skill} `}</span>
+                  <span key={index}>{`${skill} `}</span>
                 ) : (
-                  <span>{`${skill}/ `}</span>
+                  <span key={index}>{`${skill}/ `}</span>
                 )
               )}
           </div>
