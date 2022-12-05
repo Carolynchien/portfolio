@@ -56,7 +56,7 @@ const projects = [
       'An e-commerce website where users can view clothing products and add to the shopping cart.',
     image: ShoppngSite,
     skills: ['Javascript', 'ReactJs', 'CSS', 'MongoDB'],
-    deployLink: '',
+    deployLink: 'https://obscure-wave-07656.herokuapp.com',
     github: 'https://github.com/Carolynchien/Project_ShoppingSite',
     imageCollection: [ShoppngSite, catagory, search, cart]
   },
