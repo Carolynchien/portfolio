@@ -80,6 +80,16 @@
   }
 }
 
+@media (max-width: 500px) {
+  .iconscontainer {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .skillmaincontainer {
+    padding: 0;
+  }
+}
+
 /* @media (min-width: 1020px) {
   .image {
     max-width: 120px;

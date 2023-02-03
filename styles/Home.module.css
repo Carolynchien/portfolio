@@ -33,6 +33,7 @@
   z-index: 2;
   color: #86c232;
   padding-right: 25px;
+  text-align: center;
 }
 
 /* 
@@ -113,7 +114,7 @@
     line-height: 10;
   }
   .main p {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .main {
     padding: 2px auto;
@@ -121,11 +122,11 @@
   }
 }
 
-@media (max-width: 1490px) {
+/* @media (max-width: 1490px) {
   .projectContainerthrid {
     padding-left: 50px;
   }
-}
+} */
 
 @media (max-width: 1190px) {
   .projectContainerthrid {
@@ -141,7 +142,7 @@
     line-height: 10;
   }
   .main p {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .main {
     padding: 10px auto;
