@@ -1,5 +1,4 @@
 .container {
-  padding: 0 2rem;
   background: #222629;
 }
 
@@ -95,10 +94,11 @@
   min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
-  padding-left: 200px;
+  justify-content: center;
+
   width: 100%;
 
-  background: #222629;
+  background-color: #222629;
 }
 
 @media (max-width: 980px) {
